@@ -1,0 +1,337 @@
+/*BASE*/
+
+@font-face {
+    font-family: Sequel Sans;
+    src: url(fonts/SequelSansMediumDisp.ttf)
+}
+@font-face {
+    font-family: Sequel Sans Bol;
+    src: url(fonts/Sequel\ Sans\ Bold\ Disp.ttf)
+}
+@font-face {
+    font-family: Sequel Sans Blac;
+    src: url(fonts/Sequel\ Sans\ Black\ Disp.ttf)
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5;
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+    max-width: 100dvw;
+}
+#textura{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: url(images/textura/texture.png);
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: 999999999999999999999999999999;
+    pointer-events: none;
+}
+
+
+
+
+
+/*HEADER*/
+nav{
+    width: 100%;
+    height: 13vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000000000;
+}
+nav a{
+    font-family: Newake;
+    font-style: normal;
+    font-weight: Unhandled font weight;
+    font-size: clamp(1.25rem, 1.1429rem + 0.5357vw, 2rem);
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    text-decoration: none;
+     
+    color: rgba(0, 0, 0, 0.800000011920929);
+}
+
+
+
+/*HOME*/
+#home{
+    width: 100%;
+    height: 100vh;
+    padding-top: 13vh;
+    padding-bottom: 5vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.video_home{
+    background: #ffffff;
+    object-fit: cover;
+ 
+    border-radius: 35px;
+    width: 90%;
+    height: 60%;    
+}
+.textos_home{
+    width: 90%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    height: fit-content;
+}
+h1{
+    width: 50%;
+    font-family: Newake;
+    font-style: normal;
+    font-size: clamp(2.25rem, 2rem + 1.25vw, 4rem);
+    line-height: 1;
+    letter-spacing: 0.02em;
+    text-align: left;
+     
+    color: rgba(0, 0, 0, 0.699999988079071);
+}
+.textos_home p{
+    width: 50%;
+    font-family: Sequel Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: clamp(1rem, 0.9286rem + 0.3571vw, 1.5rem);
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-align: left;
+     
+    color: rgba(0, 0, 0, 0.4000000059604645);
+}
+
+
+
+/* funcionalidades */
+#funcionalidades{
+    width: 100dvw;
+    overflow: hidden;
+    height: 500vh;
+    display: flex;
+    position: relative;
+}
+.funcionalidades_pin{
+    top: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+}
+.funcionalidades_pin_dentro{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500vw;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+.funcionalidade{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 55px;
+    padding-top: 13vh;
+    padding-bottom: 5vh;
+    box-sizing: border-box;
+    box-sizing: border-box;
+}
+.funcionalidade img{
+    max-height: 40%;
+    max-width: 100%;
+}
+.funcionalidade h2{
+    font-family: Sequel Sans Blac;
+    font-style: normal;
+    font-weight: 900;
+    font-size: clamp(2.25rem, 2.1429rem + 0.5357vw, 3rem);
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 0;
+     
+    color: rgba(0, 0, 0, 0.699999988079071);
+}
+.funcionalidade p{
+    max-width: 545px;
+    font-family: Sequel Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: clamp(1rem, 0.9286rem + 0.3571vw, 1.5rem);
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-align: center;
+     
+    color: rgba(0, 0, 0, 0.4000000059604645);
+}
+
+
+
+/* conheca */
+
+#conheca{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+h3{
+    font-family: Sequel Sans Blac;
+    font-style: normal;
+    font-weight: 900;
+    font-size: clamp(2.25rem, 2.0804rem + 0.8482vw, 3.4375rem);
+    line-height: 0.99;
+    text-align: left;
+     
+    color: rgba(0, 0, 0, 0.699999988079071);
+    width: 70%;
+}
+.conheca_links{
+    display: flex;
+    gap: 30px;
+    width: 70%;
+}
+.conheca_links a{
+    background-color: #00000010;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 100%;
+    text-decoration: none;
+}
+.conheca_links a img{
+    width: 100%;
+    max-width: 657px;
+    max-height: 370px;
+    aspect-ratio: 1920 / 1080;
+}
+.conheca_links a iframe {
+    width: 100%;
+    max-width: 657px;
+    max-height: 370px;
+    aspect-ratio: 1920 / 1080;
+}
+.conheca_links a div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 45px;
+    box-sizing: border-box;
+}
+.conheca_links a div p{
+    font-family: Sequel Sans Bol;
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(1.25rem, 1.1429rem + 0.5357vw, 2rem);
+    line-height: 1;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+     
+    color: rgba(0, 0, 0, 0.699999988079071);    
+}
+.conheca_links a div svg{
+    width:  8px;
+    height: 16px;
+}
+
+
+
+
+/* FOOTER */
+footer{
+    margin-top: 10vh;
+    padding: 57px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    background-color: #00000008;
+}
+
+
+
+
+
+
+
+@media (max-width: 700px) {
+    nav{
+        height: 10vh;
+    }
+    #home{
+        padding-top: 10vh;
+    }
+    .textos_home{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 0px 10px;
+    }
+    .textos_home h1{
+        width: 100%;
+    }
+    .textos_home p{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 2em;
+    }
+    h3{
+        width: 85%;
+    }
+    .conheca_links{
+        width: 85%;
+        flex-direction: column;
+    }
+    .conheca_links a div{
+        padding: 30px 30px;
+    }
+    footer{
+        flex-direction: column;
+        padding: 20px;
+        gap: 40px;
+        padding-top: 40px;
+    }
+}
+
+/* ================================================================ */
+/* DARK MODE */
+/* ================================================================ */
+@media (prefers-color-scheme: dark) {
+    html, body {
+      filter: invert(0%) hue-rotate(0deg);
+    }
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    html, body {
+      filter: invert(100%) hue-rotate(180deg);
+    }
+  }
+  
