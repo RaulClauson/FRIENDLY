@@ -1,3 +1,6 @@
+ScrollTrigger.config({
+    autoRefreshEvents: "visibilitychange,DOMContentLoaded,load" // notice "resize" isn't in the list
+  });
 gsap.to(".funcionalidades_pin", {
     scrollTrigger:{
         trigger: ".funcionalidades_pin",
@@ -25,3 +28,4 @@ gsap.to(".funcionalidades_pin_dentro", {
     smooth: true,
     duration: 0.3
 });
+ScrollTrigger.refresh()

@@ -12,6 +12,10 @@
     font-family: Sequel Sans Blac;
     src: url(fonts/Sequel\ Sans\ Black\ Disp.ttf)
 }
+@font-face {
+    font-family: Newake;
+    src: url(fonts/Newake-Font-Demo.otf)
+}
 
 body, html{
     margin: 0;
@@ -30,7 +34,8 @@ body{
     top: 0;
     left: 0;
     background: url(images/textura/texture.png);
-    background-size: cover;
+    background-size: contain;
+    background-repeat: repeat;
     background-position: 50% 50%;
     z-index: 999999999999999999999999999999;
     pointer-events: none;
@@ -287,6 +292,7 @@ footer{
     }
     #home{
         padding-top: 10vh;
+        padding-bottom: 10vh;
     }
     .textos_home{
         flex-direction: column;
